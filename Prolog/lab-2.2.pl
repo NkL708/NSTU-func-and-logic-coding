@@ -1,5 +1,5 @@
 shift_list([], _, []) :- !.
-shift_list(List, 0, List) : -!.
+shift_list(List, 0, List) :- !.
 shift_list([Head|Tail], N, Result) :- 
     append(Tail, [Head], Temp),
     N_new is N - 1,
